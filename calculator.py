@@ -14,7 +14,7 @@ while True:
 
     if len(split_request) <= 2:
         num1 = float(split_request[1])
-    elif len(split_request) = 2:
+    elif len(split_request) == 3:
         num1 = float(split_request[1])
         num2 = float(split_request[2])
 
@@ -36,7 +36,14 @@ while True:
     elif first == "square":
         print(square(num1))
 
-    #elif first == ""
+    elif first == "cube":
+        print(cube(num1))
+
+    elif first == "pow":
+        print(power(num1, num2))
+
+    elif first == "mod":
+        print(mod(num1, num2))
 
     break
 
