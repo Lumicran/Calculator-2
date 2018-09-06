@@ -12,16 +12,16 @@ while True:
     split_request = request.split(" ")
     first = split_request[0]
 
+    if first == 'q':
+        break
+
     if len(split_request) <= 2:
         num1 = float(split_request[1])
     elif len(split_request) == 3:
         num1 = float(split_request[1])
         num2 = float(split_request[2])
 
-    if first == 'q':
-        break
-
-    elif first == "+":
+    if first == "+":
         print(add(num1, num2))
 
     elif first == "-":
@@ -45,6 +45,6 @@ while True:
     elif first == "mod":
         print(mod(num1, num2))
 
-    break
+    request = input(" ")    
 
 
