@@ -12,8 +12,11 @@ while True:
     split_request = request.split(" ")
     first = split_request[0]
 
-    num1 = float(split_request[1])
-    num2 = float(split_request[2])
+    if len(split_request) <= 2:
+        num1 = float(split_request[1])
+    elif len(split_request) = 2:
+        num1 = float(split_request[1])
+        num2 = float(split_request[2])
 
     if first == 'q':
         break
@@ -23,6 +26,17 @@ while True:
 
     elif first == "-":
         print(subtract(num1, num2))
+
+    elif first == "*":
+        print(multiply(num1, num2))
+
+    elif first == "/":
+        print(divide(num1, num2))
+
+    elif first == "square":
+        print(square(num1))
+
+    #elif first == ""
 
     break
 
