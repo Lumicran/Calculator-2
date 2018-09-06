@@ -10,7 +10,9 @@ request = input(" ")
 
 while True:
     split_request = request.split(" ")
-    print(split_request)
 
-
+    if split_request[0] == 'q':
+        
+        break
+        
     break
